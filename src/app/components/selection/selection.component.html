@@ -1,0 +1,10 @@
+<form (ngSubmit)="submit1()">
+
+    <mat-form-field class="example-full-width">
+        <mat-label>Enter a City</mat-label>
+        <input matInput placeholder="Ex. Los Angeles" type="text" name="city" [(ngModel)]="city">
+
+
+    </mat-form-field>
+    <button type="submit" value="Submit" mat-button color="accent">Search</button>
+</form>

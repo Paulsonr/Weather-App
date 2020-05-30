@@ -1,0 +1,63 @@
+<div class="container">
+    <mat-tab-group style="background-color: rgb(190, 190, 190);">
+        <mat-tab label="Weather App">
+            <mat-expansion-panel class="pannel">
+                <mat-expansion-panel-header class="expand">
+                    <mat-panel-title>
+                        CITY-1
+                    </mat-panel-title>
+                    <mat-panel-description>
+                        See the weather condition of the city
+                    </mat-panel-description>
+                </mat-expansion-panel-header>
+                <app-selection (onSelection)="display.update($event)"></app-selection>
+                <app-display #display></app-display>
+
+            </mat-expansion-panel>
+
+            <mat-expansion-panel class="pannel">
+                <mat-expansion-panel-header class="expand">
+                    <mat-panel-title>
+                        CITY-2
+                    </mat-panel-title>
+                    <mat-panel-description>
+                        See the weather condition of the city
+                    </mat-panel-description>
+                </mat-expansion-panel-header>
+
+                <app-selection (onSelection)="display1.update($event)"></app-selection>
+                <app-display1 #display1></app-display1>
+            </mat-expansion-panel>
+
+            <mat-expansion-panel class="pannel">
+                <mat-expansion-panel-header class="expand">
+                    <mat-panel-title>
+                        CITY-3
+                    </mat-panel-title>
+                    <mat-panel-description>
+                        See the weather condition of the city
+                    </mat-panel-description>
+                </mat-expansion-panel-header>
+
+                <app-selection (onSelection)="display2.update($event)"></app-selection>
+                <app-display2 #display2></app-display2>
+            </mat-expansion-panel>
+        </mat-tab>
+        <mat-tab label="Materials Used">
+            <p class="expand" style="text-align: center;">
+                BrowserModule
+                <br>HttpClientModule
+                <br> FormsModule
+                <br> MatExpansionModule
+                <br> MatInputModule
+                <br> BrowserAnimationsModule
+                <br> MatButtonModule
+                <br> MatTabsModule
+                <br> MatFormFieldModule
+            </p>
+        </mat-tab>
+        <mat-tab label="API">
+            <h1 class="expand" style="text-align: center;">OpenWeatherMap API </h1>
+        </mat-tab>
+    </mat-tab-group>
+</div>

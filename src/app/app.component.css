@@ -1,0 +1,13 @@
+.container {
+    margin-left: 30%;
+    width: 800px;
+    border: 1px solid grey;
+}
+
+.pannel {
+    background-color: rgba(255, 255, 255, 0.788);
+}
+
+.expand {
+    background-color: rgba(240, 76, 144, 0.788);
+}
